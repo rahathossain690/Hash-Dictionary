@@ -11,7 +11,6 @@
 const fs = require('fs')
 const data = JSON.parse( fs.readFileSync('E2Bdataset.json') )
 
-
 /**
  * Hash and further procedure
  */
