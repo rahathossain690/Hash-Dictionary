@@ -1,80 +1,70 @@
-# Hash_dictionary
+# Getting Started with Create React App
 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
+## Available Scripts
 
-Hash_dictionary is a javascript module for English to Bangla Dictionary that implements [Perfect hashing](https://xlinux.nist.gov/dads/HTML/perfecthash.html). I have made it as a part of my Algo-2 course assignment.
+In the project directory, you can run:
 
-### Module performance
-- Takes 503 miliseconds time to hash 130084 words.
-- Each search takes O(1) time because of using [Perfect hashing](https://xlinux.nist.gov/dads/HTML/perfecthash.html).
+### `yarn start`
 
-### Importing, initialization & basic usage
-```
-const Hash_dictionary = require('./Hash_dictionary')
-const hash_dictionary = new Hash_dictionary({
-    'A': 'একটি',
-    'Apple': 'আপেল' ,
-    'Rahat': 'খুব ভালো ছেলে'
-}, 10)
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-hash_dictionary.start_process().then(result => { 
-    
-    console.log( hash_dictionary.search('Rahat') ) 
-    // output: খুব ভালো ছেলে
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-})
-```
+### `yarn test`
 
-## Low level API
-### Constructor 
-```
-const hash_dictionary = new Hash_dictionary(DATA, SLOT_SIZE)
-// format of DATA (Object)
-// DATA {
-//   word_1: meaning_1,
-//   word_2: meaning_2,
-//   word_3: meaning_3,
-//   ... ...
-// }
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-// SLOT_SIZE should be an Integer. Default value is 2^20 + 7 (If not speficied)
-```
+### `yarn build`
 
-### hash_dictionary.start_process()
-This asyncronus function provokes the hashing process of words. Returns a promise. Return value is an object containing the information of time to execute the operation and number of words stored.
-```
-// using callback
-hash_dictionary.start_process().then(result => { 
-    console.log( result )
-    // do something else
-})
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-// using async
-(async () => {
-    const result = await hash_dictionary.start_process()
-    // do something else
-  })()
-```
-### hash_dictionary.search( 'word' )
-Searches into the dictionary in O(1) time. Works after hashing process is finished.
-```
-console.log( hash_dictionary.search('cheese') ) // output: পনির 
-```
-### hash_dictionary.dump()
-After processing hash table, this function saves the local hash-data to a file to reduce further processing time.
-```
-hash_dictionary.dump()
-```
-### hash_dictionary.load()
-Loads hash-data from file and saves processing time.
-```
-hash_dictionary.load()
-```
-### hash_dictionary.is_processed()
-Returns a boolean indiciting weather hash processing is completed.
-```
-console.log( hash_dictionary.is_processed() ) // true / false
-```
-## Dataset
-Dataset collected and combined from this [repo](https://github.com/MinhasKamal/BengaliDictionary).
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `yarn eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `yarn build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
