@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/Hash-Dictionary/static/js/main.98890a5f.chunk.js",
-    "main.js.map": "/Hash-Dictionary/static/js/main.98890a5f.chunk.js.map",
+    "main.js": "/Hash-Dictionary/static/js/main.d20845dc.chunk.js",
+    "main.js.map": "/Hash-Dictionary/static/js/main.d20845dc.chunk.js.map",
     "runtime-main.js": "/Hash-Dictionary/static/js/runtime-main.24291011.js",
     "runtime-main.js.map": "/Hash-Dictionary/static/js/runtime-main.24291011.js.map",
     "static/js/2.cf14f85a.chunk.js": "/Hash-Dictionary/static/js/2.cf14f85a.chunk.js",
@@ -14,6 +14,6 @@
   "entrypoints": [
     "static/js/runtime-main.24291011.js",
     "static/js/2.cf14f85a.chunk.js",
-    "static/js/main.98890a5f.chunk.js"
+    "static/js/main.d20845dc.chunk.js"
   ]
 }
