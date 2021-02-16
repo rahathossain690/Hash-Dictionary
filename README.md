@@ -1,5 +1,6 @@
 # Hash_dictionary
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
+
 Hash_Dictionary is a web application made with react. It's core javascript module for English to Bangla translation implements [Perfect hashing](https://xlinux.nist.gov/dads/HTML/perfecthash.html). I have made it as a part of my Algo-2 course assignment.
 
 ## Web application
