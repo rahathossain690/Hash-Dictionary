@@ -18,8 +18,12 @@ const hash_dictionary = new Hash_dictionary({
     'Rahat': 'খুব ভালো ছেলে'
 }, 10)
 
-console.log( hash_dictionary.search('Rahat') ) 
-// output: খুব ভালো ছেলে
+hash_dictionary.start_process().then(result => { 
+    
+    console.log( hash_dictionary.search('Rahat') ) 
+    // output: খুব ভালো ছেলে
+
+})
 ```
 
 ## Low level API
