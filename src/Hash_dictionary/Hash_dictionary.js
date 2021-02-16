@@ -5,7 +5,7 @@
  * Date     : Feb-16, 2021
  */
 
-module.exports = class Hash_dictionary {
+export default class Hash_dictionary {
 
     /**
      * 
