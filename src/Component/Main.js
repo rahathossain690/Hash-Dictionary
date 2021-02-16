@@ -73,8 +73,9 @@ export default function Main() {
         <Container style={{ padding: '100px 100px', align: 'center'}} align="center">
             {loading && 
                 <div>
-                    <Typography variant="caption">You have a sip of your tea, meanwhile I hash the data for you.</Typography>
                     <CircularProgress color="secondary" />
+                    <br/>
+                    <Typography variant="caption">Loading... You have a sip of your tea, meanwhile I hash the data for you.</Typography>
                 </div>
 
             }
