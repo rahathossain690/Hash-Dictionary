@@ -3,6 +3,8 @@
 
 Hash_Dictionary is a web application made with react. It's core javascript module for English to Bangla translation implements [Perfect hashing](https://xlinux.nist.gov/dads/HTML/perfecthash.html). I have made it as a part of my Algo-2 course assignment.
 
+[Watch live](https://rahathossain690.github.io/Hash-Dictionary/)
+
 ## Web application
 1. Clone the repo locally.
 2. Run command `npm install`
