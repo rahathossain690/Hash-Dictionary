@@ -5,6 +5,11 @@ Hash_Dictionary is a web application made with react. It's core javascript modul
 
 Watch live : [https://rahathossain690.github.io/Hash-Dictionary/](https://rahathossain690.github.io/Hash-Dictionary/)
 
+## Code Explanation
+Above code is explained in Bangla in youtube as a part of my assignment.
+
+Explanation url: https://www.youtube.com/watch?v=q1lk1bU9DO0
+
 ## Web application
 1. Clone the repo locally.
 2. Run command `npm install`
